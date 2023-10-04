@@ -1,0 +1,58 @@
+EQUATION RUNNER CLASS:
+Step 1: Import scanner in order to accept user inputs
+Step 2: Ask user for first coordinate
+Step 3: Ask user for second coordinate
+Step 4: Call the methods in linearEquation class
+Step 5: Print out their first coordinate
+Step 6: Print out their second coordinate
+Step 7: Print out the slope of the line
+Step 8: Print out y intercept
+Step 9: Print out slope intercept form
+Step 10: Print out the distance between the points
+Step 11: Prompt user to enter an x value
+Step 12: Call the method to determine corresponding y value
+Step 13: Print the coordinate point
+
+
+LinearEquation Class{
+
+Instance Variables:
+    private String coordinate1; The users input for the first coordinate
+
+    private String coordinate2; The users input for the second coordinate
+
+    private double x1; Represents the parsedouble value of converting the x value of the first coordinate, into a double
+
+    private double y1; Represents the parsedouble value of converting the y value of the first coordinate, into a double
+
+    private double x2; Represents the parsedouble value of converting the x value of the second coordinate, into a double
+
+    private double y2; Represents the parsedouble value of converting the y value of the second coordinate, into a double
+
+Constructors:
+    Constructor LinearEquation(coordinate1,coordinate2){
+            Assigns the values to the instance variables
+Methods:
+    coordinateConversion(String){
+       subString the String, in order create a value for x and y
+       parsedouble each value to convert them to a double
+       return each value individually
+
+    slopeFinder(x1,y1,x2,y2){
+        Finds the slope of the two coordinate points and returns slope
+
+    distanceFinder(x1,y1,x2,y2){
+        Finds the distance between the two coordinate points and returns them
+
+     yInterceptFinder(x1,y1){
+       b = slope(x1) + y1
+       returns the value of b or the y-intercept once calculated
+
+     slopeInterceptFormCalculator(x,y){
+        return y = slope(x) + b;
+
+     yValueCalculator(x){
+        calculates the y value based on the x value, slope and y intercept and then returns that value;
+
+
+
